@@ -1,0 +1,139 @@
+.startup-list {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa; 
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.startup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.startup-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startup-card p.wallet-address {
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word;
+  max-width: 100%; /* Ensure it doesn't exceed the card */
+  white-space: normal; /* Allow wrapping */
+  overflow: hidden; 
+  text-overflow: ellipsis; /* Show '...' if text overflows */
+  display: block; /* Ensure it takes up full width */
+  font-size: 0.9rem; /* Slightly reduce font size */
+  color: #222; /* Keep it readable */
+}
+
+
+.startup-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.startup-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #333;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+p strong {
+  color: black;
+  font-weight: bold;
+}
+
+.startup-card p:nth-child(3) {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.startup-card p:nth-child(4) {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+}
+
+.startup-card p:nth-child(5) {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Buttons */
+.fund-button, .collaborate-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.fund-button {
+  background: linear-gradient(to right, black, #444);
+  color: white;
+}
+
+.fund-button:hover {
+  background: linear-gradient(to right, #222, #555);
+  transform: scale(1.05);
+}
+
+.collaborate-button {
+  background-color: #444;
+  color: white;
+}
+
+.collaborate-button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.collaborate-button:active {
+  background-color: #222;
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .startup-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .startup-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

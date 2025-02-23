@@ -1,0 +1,124 @@
+
+.registration-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.registration-form input,
+.registration-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.registration-form button:hover {
+  background-color: #21a1f1;
+}
+
+.view-startup-placeholder {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f3f4f6; 
+  border: 2px dashed #ccc; 
+  color: #555;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-startup-placeholder:hover {
+  background-color: #e5e7eb; 
+  border-color: #999;
+}
+
+.button-style {
+  margin-top: 16px;   /* Equivalent to mt-4 */
+  margin-bottom: 8px; /* Equivalent to mb-2 */
+  margin-left: 8px;   /* Equivalent to mx-2 */
+  margin-right: 8px;
+  padding: 8px;       /* Equivalent to p-2 */
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+
+
+@media (max-width: 768px) {
+  .registration-form {
+    padding: 1.5rem;
+  margin: 1rem auto;
+  }
+
+  .registration-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .registration-form input,
+  .registration-form textarea {
+    padding: 0.4rem;
+  }
+
+  .registration-form button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .registration-form {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  .registration-form h2 {
+    font-size: 1rem;
+  }
+
+  .registration-form input,
+  .registration-form textarea {
+    padding: 0.3rem;
+  }
+
+  .registration-form button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
